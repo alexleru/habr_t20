@@ -9,19 +9,19 @@ public class Vector3D {
         this.z = z;
     }
 
-    public double getX(){
+    private double getX(){
         return x;
     }
 
-    public double getY(){
+    private double getY(){
         return y;
     }
 
-    public double getZ(){
+    private double getZ(){
         return z;
     }
 
-    public double leнghtOfVector(){
+    public double lengthOfVector(){
         return Math.sqrt(x*x + y*y + z*z);
     }
 
@@ -37,7 +37,7 @@ public class Vector3D {
     }
 
     public double angle(Vector3D v2) {
-        return (scalarProduct(v2)/(this.leнghtOfVector()*v2.leнghtOfVector()));
+        return (scalarProduct(v2)/(this.lengthOfVector()*v2.lengthOfVector()));
     }
 
     public Vector3D sum (Vector3D v2){
